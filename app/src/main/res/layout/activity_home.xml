@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".HomeActivity"
+    android:paddingRight="20dp"
+    android:paddingLeft="20dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/searchBackground"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+
+            android:drawableLeft="@drawable/ic_search_black_24dp"
+            android:drawableStart="@drawable/ic_search_black_24dp"
+            android:background="@drawable/round_search"
+            android:hint="Search Doctor,Hospital,Speciality or Treatment..."
+            android:textSize="20dp"
+            android:textColorHint="@color/searchHint"
+            android:textColor="@color/searchText"
+            android:fontFamily="sans-serif-light">
+        </EditText>
+    </LinearLayout>
+
+    <GridLayout
+        android:columnCount="3"
+        android:rowCount="6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:paddingTop="30dp"
+        android:numColumns="auto_fit"
+        android:horizontalSpacing="30dp"
+        android:verticalSpacing="10dp"
+        android:useDefaultMargins="true">
+
+        <ImageView
+            android:id="@+id/appointment"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:background="@drawable/circle"
+            android:src="@drawable/book_appintment"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"></ImageView>
+
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:background="@drawable/circle"
+            android:onClick="make_call"
+            android:src="@drawable/doctor_on_call"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"></ImageView>
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:background="@drawable/circle"
+            android:src="@drawable/expert_icon"
+            android:onClick="make_call"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            ></ImageView>
+        <!--        row2-->
+        <TextView
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="Book Doctors \n Appointment"
+            android:fontFamily="Times New Roman"
+            android:paddingBottom="20dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="Doctors On \n Call"
+            android:fontFamily="Times New Roman"
+            android:paddingBottom="20dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="Talk To \n Medical Expert"
+            android:fontFamily="Times New Roman"
+            android:paddingBottom="20dp"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+        <!--row3-->
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:background="@drawable/circle"
+            android:src="@drawable/patient_costs"
+            android:paddingTop="20dp"
+            android:onClick="make_call"
+            android:paddingBottom="20dp"></ImageView>
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:background="@drawable/circle"
+            android:src="@drawable/bidt_icon"
+            android:paddingTop="20dp"
+            android:onClick="make_call"
+            android:paddingBottom="20dp"></ImageView>
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:background="@drawable/circle"
+            android:src="@drawable/careathome_icon"
+            android:paddingTop="20dp"
+            android:onClick="make_call"
+            android:paddingBottom="20dp"></ImageView>
+        <!--        row4-->
+        <TextView
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="Get Operation \n Cost Extimate"
+            android:fontFamily="sans-serif"
+            android:paddingBottom="20dp"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="Get Blood &amp; \n Imaging \n Dignostic Test"
+            android:fontFamily="sans-serif"
+            android:paddingBottom="20dp"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="Care \n At Home"
+            android:fontFamily="sans-serif"
+            android:paddingBottom="20dp"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+        <!--        row 5-->
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:background="@drawable/circle"
+            android:src="@drawable/ambulance_service"
+            android:onClick="make_call"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"></ImageView>
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:background="@drawable/circle"
+            android:onClick="make_call"
+            android:src="@drawable/second_op_icon"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"></ImageView>
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:background="@drawable/circle"
+            android:onClick="make_call"
+            android:src="@drawable/order_madicine"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"></ImageView>
+        <!--        row6-->
+        <TextView
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="Ambulance \n Services"
+            android:fontFamily="sans-serif"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="Second \n Openion"
+            android:fontFamily="sans-serif"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="Order \n Medicine"
+            android:fontFamily="sans-serif"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+    </GridLayout>
+
+</LinearLayout>
