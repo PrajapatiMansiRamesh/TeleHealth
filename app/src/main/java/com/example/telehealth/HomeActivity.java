@@ -7,6 +7,8 @@ import android.view.*;
 import android.content.*;
 import android.os.Bundle;
 import android.widget.ImageView;
+import android.widget.Toolbar;
+
 public class HomeActivity extends AppCompatActivity {
     ImageView oppointment_icon;
     @Override
